@@ -43,4 +43,9 @@ public class TrafficLawController {
     public TrafficLaw getById(@PathVariable Integer id){
         return trafficLawService.getById(id);
     }
+
+    @GetMapping("/get-traffic-law-count")
+    public Integer getTrafficLawCount() {
+        return trafficLawService.getTrafficLawCount();
+    }
 }

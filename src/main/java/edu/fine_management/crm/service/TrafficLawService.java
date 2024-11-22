@@ -10,4 +10,5 @@ public interface TrafficLawService {
     List<TrafficLaw> getAll();
     void delete(Integer id);
     TrafficLaw getById(Integer id);
+    Integer getTrafficLawCount();
 }

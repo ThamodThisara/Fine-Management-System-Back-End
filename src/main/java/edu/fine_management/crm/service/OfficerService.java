@@ -13,4 +13,5 @@ public interface OfficerService {
     Officer getByNic(String nic);
     List<Officer> getByName(String name);
     List<Officer> getByPosition(String position);
+    Integer getOfficerCount();
 }

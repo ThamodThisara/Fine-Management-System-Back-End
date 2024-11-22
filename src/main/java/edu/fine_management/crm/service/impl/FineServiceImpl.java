@@ -45,4 +45,9 @@ public class FineServiceImpl implements FineService {
         fineRepository.findByDate(date).forEach(fineEntity -> fines.add(mapper.map(fineEntity, Fine.class)));
         return fines;
     }
+
+    @Override
+    public Integer getFineCount() {
+        return Math.toIntExact(fineRepository.count());
+    }
 }

@@ -48,4 +48,9 @@ public class FineController {
     public List<Fine> getByDate(@PathVariable LocalDate date) {
         return fineService.getByDate(date);
     }
+
+    @GetMapping("/get-fine-count")
+    public Integer getFineCount() {
+        return fineService.getFineCount();
+    }
 }

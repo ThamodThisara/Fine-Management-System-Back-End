@@ -15,4 +15,6 @@ public interface FineService {
     Fine getById(Integer id);
 
     List<Fine> getByDate(LocalDate date);
+
+    Integer getFineCount();
 }

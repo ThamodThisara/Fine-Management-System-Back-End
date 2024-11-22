@@ -63,4 +63,8 @@ public class OfficerController {
         return officerService.getByPosition(position);
     }
 
+    @GetMapping("/get-officer-count")
+    public Integer getOfficerCount() {
+        return officerService.getOfficerCount();
+    }
 }

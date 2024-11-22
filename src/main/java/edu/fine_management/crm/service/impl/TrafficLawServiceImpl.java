@@ -40,4 +40,9 @@ public class TrafficLawServiceImpl implements TrafficLawService {
     public TrafficLaw getById(Integer id) {
         return mapper.map(trafficLawRepository.findById(id), TrafficLaw.class);
     }
+
+    @Override
+    public Integer getTrafficLawCount() {
+        return Math.toIntExact(trafficLawRepository.count());
+    }
 }

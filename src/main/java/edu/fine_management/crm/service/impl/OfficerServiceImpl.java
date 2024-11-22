@@ -68,4 +68,9 @@ public class OfficerServiceImpl implements OfficerService {
         });
         return officerList;
     }
+
+    @Override
+    public Integer getOfficerCount() {
+        return Math.toIntExact(repository.count());
+    }
 }

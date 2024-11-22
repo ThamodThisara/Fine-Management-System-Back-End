@@ -22,6 +22,7 @@ public class Fine {
     private String driverAddress;
     private String driverEmail;
     private String driverContact;
+    private String fineTitle;
     private double fineTotalAmount;
-    private Integer officerTableId;
+    private String officerId;
 }
